@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">allianceRTU</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="national_teams">national teams</string>
+    <string name="football">football</string>
+    <string name="basketball">basketball</string>
+    <string name="handball">handball</string>
+    <string name="badminton">badminton</string>
+    <string name="volleyball">volleyball</string>
+    <string name="_5_points">5-points</string>
+    <string name="logo_che_erleading">logo_che erleading</string>
+    <string name="title_cheerleading">title_cheerleading</string>
+    <string name="histoiry_cheerleading">histoiry_cheerleading</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_schedule"
+        android:icon="@drawable/calendar"
+        android:title="Расписание игр" />
+
+    <item
+        android:id="@+id/navigation_results"
+        android:icon="@drawable/statistics"
+        android:title="Статистика" />
+
+
+    <item
+        android:id="@+id/navigation_equipe"
+        android:icon="@drawable/equipe"
+        android:title="Состав сборной" />
+
+    <item
+        android:id="@+id/navigation_achivements"
+        android:icon="@drawable/achivements"
+        android:title="Наши достижения"/>
+
+    <item
+        android:id="@+id/navigation_legacy"
+        android:icon="@drawable/legacy"
+        android:title="Наше наследние"/>
+</menu>

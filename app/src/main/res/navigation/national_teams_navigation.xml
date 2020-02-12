@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/national_teams_navigation"
+    app:startDestination="@id/navigation_results">
+
+    <fragment
+        android:id="@+id/navigation_schedule"
+        android:name="com.example.alliancertu.nationalTeamsUI.schedule_plays.SchedulePlaysFragment"
+        android:label="Наши challenges"
+        tools:layout="@layout/fragment_schedule_matches"/>
+
+    <fragment
+        android:id="@+id/navigation_results"
+        android:name="com.example.alliancertu.nationalTeamsUI.result_plays.ResultPlaysFragment"
+        android:label="Чем мы гордимся"
+        tools:layout="@layout/fragment_result_matches"/>
+
+    <fragment
+        android:id="@+id/navigation_equipe"
+        android:name="com.example.alliancertu.nationalTeamsUI.equipe_plays.EquipePlaysFragment"
+        android:label="Наш геори"
+        tools:layout="@layout/fragment_equipe"/>
+
+    <fragment
+        android:id="@+id/navigation_achivements"
+        android:name="com.example.alliancertu.nationalTeamsUI.achivements.FragmentAchivements"
+        android:label="Наши достижения"
+        tools:layout="@layout/fragment_achivements"/>
+
+    <fragment
+        android:id="@+id/navigation_legacy"
+        android:name="com.example.alliancertu.nationalTeamsUI.legacy.FragmentLegacy"
+        android:label="Наше наследие"
+        tools:layout="@layout/fragment_legacy"/>
+</navigation>
