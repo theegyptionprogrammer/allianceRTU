@@ -1,7 +1,7 @@
 package com.example.alliancertu.items
 
 import com.example.alliancertu.R
-import com.example.alliancertu.modules.Match
+import com.example.alliancertu.models.Match
 import com.squareup.picasso.Picasso
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
