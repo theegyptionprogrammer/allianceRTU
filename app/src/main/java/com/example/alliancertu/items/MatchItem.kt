@@ -14,8 +14,8 @@ class MatchItem(private val match: Match): Item<ViewHolder>() {
     override fun getLayout(): Int = R.layout.item_rv_schedule_matches
 
     override fun bind(viewHolder: ViewHolder, position: Int) {
-        viewHolder.itemView.name_first_team.text = match.ourTeam
-        viewHolder.itemView.name_second_team.text = match.opponentTeam
+        viewHolder.itemView.name_first_team.text = match.ourTeam.ourTeamName
+        viewHolder.itemView.name_second_team.text = match.opponentTeam.opponenTeamName
         Picasso.get().load(R.drawable.ic_android_black_24dp).into(viewHolder.itemView.first_team_pp)
         Picasso.get().load(R.drawable.ic_android_black_24dp).into(viewHolder.itemView.second_team_pp)
     }

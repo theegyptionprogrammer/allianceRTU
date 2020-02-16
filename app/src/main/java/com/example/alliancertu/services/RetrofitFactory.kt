@@ -1,17 +1,17 @@
 package com.example.alliancertu.viewModules
 
+import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
-import okhttp3.Response
 import retrofit2.Retrofit
-import java.time.Duration
+import retrofit2.converter.moshi.MoshiConverterFactory
 
-object AllianceAppService{
+object RetrofitFactory {
 
     lateinit var apiKey: String
 
     private val authInceptor = Interceptor {chain ->
-        val newUrl = chain.request().url()
+        val newUrl = chain.request().url
             .newBuilder()
             .addQueryParameter("api_key", apiKey)
             .build()
@@ -29,6 +29,11 @@ object AllianceAppService{
         .build()
 
     fun retrofit() : Retrofit = Retrofit.Builder()
-        .addConverterFactory()
+        .client(allianceAppClient)
+        .baseUrl("")
+        .addConverterFactory(MoshiConverterFactory.create())
+        .addCallAdapterFactory(CoroutineCallAdapterFactory())
+        .build()
 
+    val allianceAppApi: AllianceAppApi = retrofit().create(AllianceAppApi::class.java)
 }

@@ -2,17 +2,15 @@
 
 package com.example.alliancertu.nationalTeamsUI.schedule_plays
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import com.example.alliancertu.R
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.ViewHolder
-import kotlinx.android.synthetic.main.fragment_schedule_matches.*
 
 @Suppress("DEPRECATION")
 class SchedulePlaysFragment : Fragment() {
@@ -22,11 +20,6 @@ class SchedulePlaysFragment : Fragment() {
     }
 
     private val adapter = GroupAdapter<ViewHolder>()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        rv_schedule_matches.adapter = adapter
-    }
 
     private lateinit var viewModel: SchedulePlaysViewModel
 
