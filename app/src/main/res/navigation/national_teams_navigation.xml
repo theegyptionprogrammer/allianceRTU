@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_schedule"
-        android:name="com.example.alliancertu.nationalTeamsUI.schedule_plays.SchedulePlaysFragment"
+        android:name="com.example.alliancertu.nationalTeamsUI.schedule_matches.ScheduleMatchesFragment"
         android:label="Наши challenges"
         tools:layout="@layout/fragment_schedule_matches"/>
 
     <fragment
         android:id="@+id/navigation_results"
-        android:name="com.example.alliancertu.nationalTeamsUI.result_plays.ResultPlaysFragment"
+        android:name="com.example.alliancertu.nationalTeamsUI.result_matches.ResultsMatchesFragment"
         android:label="Чем мы гордимся"
-        tools:layout="@layout/fragment_result_matches"/>
+        tools:layout="@layout/fragment_results_matches" />
 
     <fragment
         android:id="@+id/navigation_equipe"
-        android:name="com.example.alliancertu.nationalTeamsUI.equipe_plays.EquipePlaysFragment"
+        android:name="com.example.alliancertu.nationalTeamsUI.equipe_matches.EquipeMatchesFragment"
         android:label="Наш геори"
         tools:layout="@layout/fragment_equipe"/>
 
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/navigation_legacy"
-        android:name="com.example.alliancertu.nationalTeamsUI.legacy.FragmentLegacy"
+        android:name="com.example.alliancertu.nationalTeamsUI.legacy.LegacyFragment"
         android:label="Наше наследие"
         tools:layout="@layout/fragment_legacy"/>
 </navigation>

@@ -6,7 +6,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-class Post (
+data class Post(
     @PrimaryKey val idPosta: Int,
     @ColumnInfo(name = "textPost") val textPosta: String,
     @ColumnInfo(name = "headingPost") val headingPosta: String,

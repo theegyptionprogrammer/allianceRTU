@@ -1,5 +1,6 @@
 package com.example.alliancertu.viewModules
 
+import com.example.alliancertu.services.AllianceAppApi
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
