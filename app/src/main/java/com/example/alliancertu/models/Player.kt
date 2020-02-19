@@ -8,6 +8,7 @@ import androidx.room.PrimaryKey
 @Entity
 data class Player(
     @PrimaryKey val idPlayer: Int,
-    @ColumnInfo(name = "profilePhoto") val profilePhoto: Bitmap,
+    @ColumnInfo(name = "playerPP") val playerPP: Bitmap,
     @ColumnInfo(name = "playerName") val playerName: String,
-    @ColumnInfo(name = "position") val position: String)
+    @ColumnInfo(name = "playerPosition") val playerPosition: String
+)

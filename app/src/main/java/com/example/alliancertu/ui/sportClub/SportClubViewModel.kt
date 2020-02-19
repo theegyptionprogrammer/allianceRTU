@@ -1,10 +1,10 @@
-package com.example.alliancertu.ui.home
+package com.example.alliancertu.ui.sportClub
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class SportClubViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"

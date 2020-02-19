@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION")
 
-package com.example.alliancertu.ui.home
+package com.example.alliancertu.ui.sportClub
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,9 +12,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.alliancertu.R
 
-class HomeFragment : Fragment() {
+class SportClubFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var homeViewModel: SportClubViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -22,8 +22,8 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         homeViewModel =
-            ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
+            ViewModelProviders.of(this).get(SportClubViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_sport_club, container, false)
         val textView: TextView = root.findViewById(R.id.text_home)
         homeViewModel.text.observe(this, Observer {
             textView.text = it
