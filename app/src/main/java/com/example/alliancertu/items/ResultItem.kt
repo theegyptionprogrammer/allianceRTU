@@ -7,7 +7,7 @@ import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
 import kotlinx.android.synthetic.main.item_rv_results_matches.view.*
 
-class ResultItem(val resultMatch: ResultMatch) : Item<ViewHolder>() {
+class ResultItem(private val resultMatch: ResultMatch) : Item<ViewHolder>() {
 
     override fun getLayout(): Int = R.layout.item_rv_results_matches
 
@@ -20,4 +20,6 @@ class ResultItem(val resultMatch: ResultMatch) : Item<ViewHolder>() {
         Picasso.get().load(R.drawable.ic_android_black_24dp)
             .into(viewHolder.itemView.second_team_pp)
     }
+
+
 }

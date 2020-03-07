@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_results"
-        android:name="com.example.alliancertu.nationalTeamsUI.result_matches.ResultsMatchesFragment"
+        android:name="com.example.alliancertu.nationalTeamsUI.result_matches.ResultMatchesFragment"
         android:label="Чем мы гордимся"
         tools:layout="@layout/fragment_results_matches" />
 

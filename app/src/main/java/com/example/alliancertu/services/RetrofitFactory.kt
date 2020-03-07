@@ -1,6 +1,6 @@
 package com.example.alliancertu.viewModules
 
-import com.example.alliancertu.services.AllianceAppApi
+import com.example.alliancertu.services.RetrofitApi
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -25,16 +25,17 @@ object RetrofitFactory {
         chain.proceed(newRequest)
     }
 
-    private val allianceAppClient = OkHttpClient().newBuilder()
+    private val allianceAppHttpClient = OkHttpClient().newBuilder()
         .addInterceptor(authInceptor)
         .build()
 
     fun retrofit() : Retrofit = Retrofit.Builder()
-        .client(allianceAppClient)
+        .client(allianceAppHttpClient)
         .baseUrl("")
         .addConverterFactory(MoshiConverterFactory.create())
         .addCallAdapterFactory(CoroutineCallAdapterFactory())
         .build()
 
-    val allianceAppApi: AllianceAppApi = retrofit().create(AllianceAppApi::class.java)
+    val cckApi = retrofit().create(RetrofitApi::class.java)
+
 }
