@@ -13,4 +13,19 @@
     <string name="logo_che_erleading">logo_che erleading</string>
     <string name="title_cheerleading">title_cheerleading</string>
     <string name="histoiry_cheerleading">histoiry_cheerleading</string>
+    <string name="teams">Команды</string>
+    <string name="media">медиа</string>
+    <string name="informations">информация</string>
+    <string name="organizers">организаторы</string>
+    <string name="ssc_alliance">ssc_alliance</string>
+    <string name="vk_com_ssc_alliance">vk.com/ssc_alliance</string>
+    <string name="title_activity_session_item">SessionItem</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

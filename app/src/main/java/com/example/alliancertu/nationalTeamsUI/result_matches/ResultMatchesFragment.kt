@@ -19,7 +19,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import retrofit2.HttpException
 
 class ResultMatchesFragment : Fragment() {
 
@@ -58,10 +57,8 @@ class ResultMatchesFragment : Fragment() {
                         response.body()?.resultMatch?.map {
                             myAdapter.add(ResultItem(it))
                         }
-
-                    } else {
                     }
-                } catch (e: HttpException) {
+                } catch (e: Error) {
                 }
             }
         }

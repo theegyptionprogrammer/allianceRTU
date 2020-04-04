@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sport_event_navigation"
+    app:startDestination="@id/navigation_sport_event_information">
+
+    <fragment
+        android:id="@+id/navigation_sport_event_information"
+        android:name="com.example.alliancertu.sportClubUI.sportEvents.information.FragmentSportEventInformations"
+        android:label="@string/_5_points"
+        tools:layout="@layout/fragment_sport_event_informations" />
+
+    <fragment
+        android:id="@+id/navigation_sport_event_media"
+        android:name="com.example.alliancertu.sportClubUI.sportEvents.media.FragmentSportEventMedia"
+        android:label="@string/_5_points"
+        tools:layout="@layout/fragment_sport_event_media" />
+
+    <fragment
+        android:id="@+id/navigation_sport_event_teams"
+        android:name="com.example.alliancertu.sportClubUI.sportEvents.teams.FragmentSportEventTeams"
+        tools:layout="@layout/fragment_sport_event_teams" />
+
+</navigation>
