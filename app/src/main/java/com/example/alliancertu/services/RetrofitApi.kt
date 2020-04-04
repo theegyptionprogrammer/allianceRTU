@@ -20,6 +20,9 @@ interface RetrofitApi {
     @GET
     suspend fun getScheduleMatches(): Response<Match>
 
+    @GET
+    suspend fun getPlayers(): Response<Player>
+
     @GET("/getScheduleMatches")
     fun getMatches(
         @Query("ourNationalTeam") ourNationalTeam: OurNationalTeam, @Query("opponentTeam") opponentNationalTeam: OpponentNationalTeam,

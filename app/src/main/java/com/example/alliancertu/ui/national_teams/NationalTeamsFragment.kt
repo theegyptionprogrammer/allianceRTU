@@ -42,14 +42,12 @@ class NationalTeamsFragment : Fragment() {
 
         val footballTeam : Button = view.findViewById(R.id.btn_football_team)
         footballTeam.setOnClickListener {listner()}
-        val cheerleadingTeam : Button = view.findViewById(R.id.btn_cheerleading_team)
-        cheerleadingTeam.setOnClickListener { listner()}
+        val cheerleadersTeam: Button = view.findViewById(R.id.btn_cheerleading_team)
+        cheerleadersTeam.setOnClickListener { listner() }
         val volleyballTeam : Button = view.findViewById(R.id.btn_volleyball_team)
         volleyballTeam.setOnClickListener { listner()}
         val basketballTeam : Button = view.findViewById(R.id.btn_basketball_team)
         basketballTeam.setOnClickListener { listner()}
         return view
-
     }
-
 }
