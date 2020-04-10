@@ -6,7 +6,7 @@ import com.example.alliancertu.R
 
 class DetailItemRvScheduleMatchesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        setContentView(R.layout.detail_item_rv_schedule_matches)
+        setContentView(R.layout.activity_detail_item_rv_schedule_matches)
         super.onCreate(savedInstanceState)
     }
 }

@@ -12,15 +12,11 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.alliancertu.R
-import com.example.alliancertu.items.MatchItem
 import com.example.alliancertu.services.RetrofitApi
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.ViewHolder
 import kotlinx.android.synthetic.main.fragment_schedule_matches.*
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+
 
 @Suppress("DEPRECATION")
 class ScheduleMatchesFragment : Fragment() {
@@ -68,25 +64,25 @@ class ScheduleMatchesFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(ScheduleMatchesViewModel::class.java)
         setRecyclerView()
-        getScheduleMatches()
+        //getScheduleMatches()
     }
 
-    private fun getScheduleMatches() {
-        CoroutineScope(Dispatchers.IO).launch {
-            val response = retrofitService.getScheduleMatches()
-            withContext(Dispatchers.Main) {
-                try {
-                    if (response.isSuccessful) {
-                        myAdapter.clear()
-                        response.body()?.match?.map {
-                            myAdapter.add(MatchItem(it))
-                        }
-                    }
-                } catch (e: Error) {
-                }
-            }
-        }
-    }
+    /*   private fun getScheduleMatches() {
+           CoroutineScope(Dispatchers.IO).launch {
+               val response = retrofitService.getScheduleMatches()
+               withContext(Dispatchers.Main) {
+                   try {
+                       if (response.isSuccessful) {
+                           myAdapter.clear()
+                           response.body()?.match?.map {
+                               myAdapter.add(MatchItem(it))
+                           }
+                       }
+                   } catch (e: Error) {
+                   }
+               }
+           }
+       }*/
 
     fun listener() {
         val intent = Intent(activity, DetailItemRvScheduleMatchesActivity::class.java)

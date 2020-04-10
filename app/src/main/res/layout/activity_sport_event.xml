@@ -44,8 +44,6 @@
                     android:layout_height="200dp" />
             </ScrollView>
         </LinearLayout>
-
-
     </ScrollView>
 
     <Button

@@ -1,11 +1,15 @@
 package com.example.alliancertu.models
 
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
+@Entity
 data class Match(
-     var idMatch: Int,
-     var opponentTeam: OpponentNationalTeam,
-     var ourTeam: OurNationalTeam,
-     var matchTime: String,
-     var matchLocation: String,
-     var match: ArrayList<Match>
+    @PrimaryKey var idMatch: Int,
+    @ColumnInfo(name = "opponentTeam") var opponentTeam: OpponentNationalTeam,
+    @ColumnInfo(name = "ourTeam") var ourTeam: OurNationalTeam,
+    @ColumnInfo(name = "matchTime") var matchTime: String,
+    @ColumnInfo(name = "matchLocation") var matchLocation: String,
+    @ColumnInfo(name = "listMatch") var listMatch: ArrayList<Match>
 )

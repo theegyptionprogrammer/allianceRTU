@@ -1,13 +1,19 @@
 package com.example.alliancertu.models
 
 import android.graphics.Bitmap
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-
+@Entity
 data class Player(
-    val idPlayer: Int,
-    val playerPP: Bitmap,
-    val playerName: String,
-    val playerPosition: String,
-    val playerAccount: String,
-    val listPlayers: ArrayList<Player>
+    @PrimaryKey val idPlayer: Int,
+    @ColumnInfo(name = "PlayerPP") val playerPP: Bitmap,
+    @ColumnInfo(name = "playerName") val playerName: String,
+    @ColumnInfo(name = "playerPosition") val playerPosition: String,
+    @ColumnInfo(name = "playerAccount") val playerAccount: String,
+    @ColumnInfo(name = "listPlayers") val listPlayers: ArrayList<Player>
 )
+
+
+

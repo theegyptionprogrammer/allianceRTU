@@ -6,20 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".ui.national_teams.NationalTeamActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/logo_cheerleading"
-        android:layout_width="wrap_content"
+
+    <ImageView
+        android:id="@+id/logo_national_team"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="4dp"
-        android:background="@drawable/cheerleading"
-        app:civ_border_width="2dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/title_cheerleading"
+        android:id="@+id/title_national_team"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginStart="4dp"
@@ -29,7 +28,7 @@
         android:text="@string/title_cheerleading"
         app:layout_constraintBottom_toTopOf="@+id/national_team_nav_view"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_cheerleading" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_national_team" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/national_team_nav_view"
@@ -51,7 +50,7 @@
         android:id="@+id/national_team_nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="410dp"
-        android:layout_height="510dp"
+        android:layout_height="wrap_content"
         app:defaultNavHost="true"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -68,7 +67,7 @@
         android:layout_marginTop="10dp"
         android:text="vk link"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/logo_cheerleading" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_national_team" />
 
     <TextView
         android:id="@+id/instagram"
@@ -88,7 +87,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="4dp"
-        app:layout_constraintStart_toEndOf="@+id/title_cheerleading"
+        app:layout_constraintStart_toEndOf="@+id/title_national_team"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/instasmall" />
 
@@ -99,8 +98,8 @@
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintStart_toEndOf="@+id/title_cheerleading"
-        app:layout_constraintTop_toBottomOf="@+id/logo_cheerleading"
+        app:layout_constraintStart_toEndOf="@+id/title_national_team"
+        app:layout_constraintTop_toBottomOf="@+id/logo_national_team"
         app:srcCompat="@drawable/vksmall" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

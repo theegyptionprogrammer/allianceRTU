@@ -20,8 +20,8 @@ interface RetrofitApi {
     @GET
     suspend fun getScheduleMatches(): Response<Match>
 
-    @GET
-    suspend fun getPlayers(): Response<Player>
+    @GET("/getPlayers")
+    suspend fun getPlayers(): List<Player>
 
     @GET("/getScheduleMatches")
     fun getMatches(

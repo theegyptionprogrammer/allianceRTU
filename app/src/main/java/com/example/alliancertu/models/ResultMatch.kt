@@ -1,13 +1,17 @@
 package com.example.alliancertu.models
 
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
+@Entity
 data class ResultMatch(
-    val idMatch: String,
-    var opponentTeam: OpponentNationalTeam,
-    var ourTeam: OurNationalTeam,
-    val resultOurTeam: String,
-    val resultOpponentTeam: String,
-    val resultMatch: MutableList<ResultMatch>
+    @PrimaryKey val idMatch: String,
+    @ColumnInfo(name = "oppnentTeam") var opponentTeam: OpponentNationalTeam,
+    @ColumnInfo(name = "ourTeam") var ourTeam: OurNationalTeam,
+    @ColumnInfo(name = "resultOurTeam") val resultOurTeam: String,
+    @ColumnInfo(name = "resultOpponentTeam") val resultOpponentTeam: String,
+    @ColumnInfo(name = "listResultMatch") val listResultMatch: MutableList<ResultMatch>
 
 )
 

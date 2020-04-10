@@ -8,6 +8,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.alliancertu.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_national_team.*
 
 class NationalTeamActivity : AppCompatActivity() {
 
@@ -24,5 +26,9 @@ class NationalTeamActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController,appBarConfiguration)
         nationalTeamView.setupWithNavController(navController)
+        Picasso.get()
+            .load(R.drawable.cheerleading)
+            .fit()
+            .into(logo_national_team)
     }
 }

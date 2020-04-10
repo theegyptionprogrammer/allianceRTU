@@ -5,11 +5,11 @@ import com.example.alliancertu.models.Player
 import com.squareup.picasso.Picasso
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
-import kotlinx.android.synthetic.main.item_rv_equipe.view.*
+import kotlinx.android.synthetic.main.item_player.view.*
 
 class PlayerItem(val player: Player) : Item<ViewHolder>() {
 
-    override fun getLayout(): Int = R.layout.item_rv_equipe
+    override fun getLayout(): Int = R.layout.item_player
 
     override fun bind(viewHolder: ViewHolder, position: Int) {
         viewHolder.itemView.tv_fno_player.text = player.playerName
